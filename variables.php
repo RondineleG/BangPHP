@@ -40,9 +40,22 @@
      }
 
      myTestGlobal();
-
      echo $y;
+     echo "<p> Variable x outside function is : $y</p>";
 
+
+     function testGlobal()
+     {
+        
+        $GLOBALS['y'] = $GLOBALS ['x'] * $GLOBALS['y'];
+       
+
+     }
+
+     testGlobal();
+     echo "<p> Variable in global function is : $y</p>";
+     echo $y;
+   
 ?>
 </body>
 </html>
