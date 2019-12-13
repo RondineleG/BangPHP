@@ -4,8 +4,7 @@
 </head>
 <body>
 <?php
-    $a="Hello World";
-    echo "<h1> \$a= $a <h1>";
+    echo "Hello World";
 ?>
 </body>
 </html>
