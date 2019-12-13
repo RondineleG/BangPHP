@@ -15,6 +15,8 @@
     that spans over multiple
     lines  
     */
+    $x = 5 /* + 15 */ + 5;
+     echo $x;
 ?>
 </body>
 </html>
