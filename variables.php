@@ -55,6 +55,24 @@
      testGlobal();
      echo "<p> Variable in global function is : $y</p>";
      echo $y;
+
+     function staticFunction()
+     {
+        static $x = 0;
+        echo $x;
+        $x++;
+     }
+     echo "<p> static Keyword : </p>";
+     
+     staticFunction();
+     staticFunction();
+     staticFunction();
+     staticFunction();
+     staticFunction();
+     staticFunction();
+     staticFunction();
+     staticFunction();
+
    
 ?>
 </body>
