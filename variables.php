@@ -8,10 +8,18 @@
 </head>
 <body>
 <?php
-    $txt = "Hello World";
+    $txt = "Hello World  ";
     $x =5;
     $y= 10.5;
      echo $txt;
+    
+     $txt = " w3schools.com";
+     echo "I love $txt !";
+
+     echo " I love" . $txt . "! ";
+
+     echo $x + $y;
+
 ?>
 </body>
 </html>
