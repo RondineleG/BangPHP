@@ -23,14 +23,25 @@
 
      function myTest()
      {
-         //local variable
-         $x = 10;
-         echo "<p> Variable x inside function is : $x</p>";
+         //local variable       
+         $l = 10;
+         echo "<p> Variable x inside function is : $l</p>";
      }
 
      myTest();
 
      echo "<p> Variable x outside function is : $x</p>";
+
+     function myTestGlobal()
+     {         
+         global $x, $y;
+
+         $y = $x + $y + 1;
+     }
+
+     myTestGlobal();
+
+     echo $y;
 
 ?>
 </body>
