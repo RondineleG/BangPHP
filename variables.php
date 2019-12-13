@@ -8,6 +8,7 @@
 </head>
 <body>
 <?php
+     // global scope
     $txt = "Hello World  ";
     $x =5;
     $y= 10.5;
@@ -19,6 +20,17 @@
      echo " I love" . $txt . "! ";
 
      echo $x + $y;
+
+     function myTest()
+     {
+         //local variable
+         $x = 10;
+         echo "<p> Variable x inside function is : $x</p>";
+     }
+
+     myTest();
+
+     echo "<p> Variable x outside function is : $x</p>";
 
 ?>
 </body>
