@@ -44,7 +44,19 @@
        $height = 1.66;
        $price = 6.88;
 
-       var_dump($height)
+       var_dump($height);
+
+       echo "<h2>Boolean</h2>";
+
+       # this is a declaration of float
+
+       $isLive = true;
+       $isDead = false;
+
+       var_dump($isDead);
+
+
+
       
 
     ?>
