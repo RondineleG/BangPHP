@@ -1,7 +1,17 @@
-<?php
-echo "<p>Hello World</p>"; 
-$color = "red";
-echo "My car is " . $color . "<br>";
-echo "My house is " . $color . "<br>";
-echo "My boat is " . $color. "<br>";
-?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learning PHP</title>
+</head>
+
+<body>
+    <?php
+    
+    ?>
+</body>
+
+</html>
