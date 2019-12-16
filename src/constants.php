@@ -29,6 +29,18 @@
     print cars[2];
     echo "<br>";
 
+    print "<h2>Constant Global</h2>";
+
+    define("HI", "Welcome to w3schoorls.com !");
+    function constantGlobal()
+    {
+        echo HI;
+    }
+
+   constantGlobal();
+    echo "<br>";
+
+
 
     ?>
 </body>
