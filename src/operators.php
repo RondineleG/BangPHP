@@ -190,6 +190,68 @@
     echo "<br>";
     echo"<p></p>";
 
+    print "<h2>Logical Operators</h2>";
+
+
+    /* Operators   Name                 Example               Description 
+       and         And                  $x and $y             True if both $x and $y are true
+       or          Or                   $x or $y              True if either $x or $y is true     
+       xor         Xor                  $x xor $y             True if either $x or $y is true, but not both
+       &&          And                  $x && $y              True if both $x and $y are true 
+       ||          Or                   $x || $y              True if either $x or $y is true  
+       !           Not                  !$x                   True if $x is not true 
+ 
+    */                              
+     $x = 50;
+     $y = 2;
+
+     print "Operator and : ";
+     
+     if($x == 50 and $y == 2)
+     {
+         print "This return is true, two condition is true";
+
+     }
+     echo "<br>";
+     print "Operator or : ";
+     if($x == 50 or $y == 20)
+     {
+         print "This return is true if one condition is true";
+
+     }
+     echo "<br>";
+     print "Operator xor : ";
+     if($x == 50 xor $y == 20)
+     {
+         print "This return is true if one condition is true, but not both";
+
+     }
+     echo "<br>";
+
+     print "Operator && : ";
+     
+     if($x == 50 && $y == 2)
+     {
+         print "This return is true, two condition is true";
+
+     }
+    echo "<br>";
+
+    print "Operator || : ";
+    if($x == 50 || $y == 20)
+    {
+        print "This return is true if one condition is true";
+
+    }
+    echo "<br>";
+
+    print "Operator ! : ";
+    if($x !== 40 || $y == 20)
+    {
+        print "This return is true if one condition is not true";
+
+    }
+
     ?>
 </body>
 
