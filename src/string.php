@@ -45,9 +45,14 @@
     $search = "Rondinele";
 
     print "Search for text within $search : ";
+    echo strpos($strTitle, $search);
 
-    echo strpos($strTitle, $search)
+    print "<h2> str_replace()</h2>";
 
+    # str_replace() - Replace a text within a string
+    $replace = "Gabriela";
+    print " Text replace is : ";
+    echo str_replace("Rondinele", $replace, $strTitle);
 
     ?>
 </body>
