@@ -10,7 +10,8 @@
 
 <body>
     <?php 
-       print "<h2> Strings Functions</h2>";
+    
+       print "<h2> strlen() </h2>";
 
        # strlen() - return the lenght of a string
 
