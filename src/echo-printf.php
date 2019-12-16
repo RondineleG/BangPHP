@@ -10,6 +10,8 @@
 <body>
 
 <?php
+     echo "<h1> Command echo</h1>";
+
     echo "<h2> PHP is fun !</h2>";
     echo "Hello world!<br>";
     echo "I'm about to learn PHP ! <br>";
@@ -30,6 +32,12 @@
      echo "The multiplication value of $x and $y is : " ;
      echo  $x * $y;
 
+     echo "<h1> Commmand print </h1>";
+
+     print "<h2>PHP is more or less</h2>";
+     print " Save the world <br>";
+
+     print "I'm about to learn PHP";
 
 ?>
 
