@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Impressão de textos  </title>
+    <title> PHP echo and print </title>
 
 </head>
 <body>
@@ -14,6 +14,21 @@
     echo "Hello world!<br>";
     echo "I'm about to learn PHP ! <br>";
     echo "This", "string","was", "made","with multiple parameters";
+    
+    $txtTitle = "Learn PHP";
+
+    $txtUrl = "www.w3schools.com";
+
+     $x = 500;
+     $y = 400;
+
+
+     echo "<h2>" . $txtTitle . "</h2>";
+
+     echo "Study PHP at " . $txtUrl . "<br>";
+
+     echo "The multiplication value of $x and $y is : " ;
+     echo  $x * $y;
 
 
 ?>
