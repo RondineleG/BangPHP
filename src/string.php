@@ -12,7 +12,7 @@
     <?php
 
     echo "<h4>This is a string for use in functions</h4>";
-    $strTitle = "Hello, Rondinle Guimaraes";
+    $strTitle = "Hello, Rondinele Guimaraes";
     print $strTitle;
 
 
@@ -37,6 +37,16 @@
 
     print "The string reverse is : ";
     echo strrev($strTitle);
+
+
+    print "<h2> strpos() </h2>";
+
+    # strpos() - Search for a text within a string
+    $search = "Rondinele";
+
+    print "Search for text within $search : ";
+
+    echo strpos($strTitle, $search)
 
 
     ?>
