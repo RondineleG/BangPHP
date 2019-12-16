@@ -274,6 +274,13 @@
     $y = array("c" => "BLue","d" => "Yellow",);
   
 print_r($x + $y); # union of $ and $y
+
+#Copare if arrays are equals
+var_dump($x == $y);
+
+#Copare if arrays are identity
+var_dump($x === $y);
+  
   
 
      
