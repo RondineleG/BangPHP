@@ -102,43 +102,95 @@
                                                                      depending on if $x is less than, equal to, or greater than $y.     
    */
 
-  print "Equal :";
-  var_dump ($x == $y);
-  echo "<br>";
+    print "Equal :";
+    var_dump($x == $y);
+    echo "<br>";
 
-  print "Identical : ";
-  var_dump ($x === $y);
-  echo "<br>";
+    print "Identical : ";
+    var_dump($x === $y);
+    echo "<br>";
 
-  print "Not equal : ";
-  var_dump ( $x != $y);
-  echo "<br>";
+    print "Not equal : ";
+    var_dump($x != $y);
+    echo "<br>";
 
-  print "Not equal : ";
-  var_dump ($x <> $y);
-  echo "<br>";
+    print "Not equal : ";
+    var_dump($x <> $y);
+    echo "<br>";
 
-  print "Not identical  :";
-  var_dump ($x !== $y);
-  echo "<br>";
-  print "Greater than :";
-  print $x !==   $y;
-  echo "<br>";
-  print "Less than  :";
-  print $x !==   $y;
-  echo "<br>";
-  print "Greater than or equal to  :";
-  print $x !==   $y;
-  echo "<br>";
-  print "Less than or equal to :";
-  print $x !==   $y;
-  echo "<br>";
-  print "Spaceship :";
-  print $x !==   $y;
-  echo "<br>";
+    print "Not identical  :";
+    var_dump($x !== $y);
+    echo "<br>";
+    print "Greater than :";
+    print $x !==   $y;
+    echo "<br>";
+    print "Less than  :";
+    print $x !==   $y;
+    echo "<br>";
+    print "Greater than or equal to  :";
+    print $x !==   $y;
+    echo "<br>";
+    print "Less than or equal to :";
+    print $x !==   $y;
+    echo "<br>";
+    print "Spaceship :";
+    print $x !==   $y;
+    echo "<br>";
 
-  ?>
 
+    print "<h2>Increment / Decrement Operators</h2>";
+
+
+    /* Operators   Name                Description 
+       ++$x        Pre-increment       increments $x by one, then returns $x
+       $x++        Post-Increment      Retunrs  $x, then increments $x by the one      
+       --$x        Pre-Decrement       Decrements $x by one, then returns $x
+       $x--        Post-Decrement      Retunrs  $x, then decrements $x by the one   
+    */
+
+    
+
+    $x = 10;    
+    print "Value of x is : $x";
+    echo "<br>";
+    print "Pre-increment :";
+    echo ++$x;
+    echo "<br>";
+    print "Value of x is : $x with Pre-Increment ";    
+    echo "<br>";
+    echo"<p></p>";
+
+    $x = 20;  
+    print "Value of x is : $x";
+    echo "<br>";
+    print "Post-Increment   :";
+    echo $x++; 
+    echo "<br>";
+    print "Value of x is : $x with Post-Increment ";    
+    echo "<br>";
+    echo"<p></p>";
+
+    $x = 30;  
+    print "Value of x is : $x";
+    echo "<br>";
+    print "Pre-Decrement :";
+    echo $x--; 
+    echo "<br>";
+    print "Value of x is : $x with Post-Decrementement ";    
+    echo "<br>";
+    echo"<p></p>";
+
+    $x = 40;  
+    print "Value of x is : $x";
+    echo "<br>";
+    print "Post-Decrement   :";
+    echo --$x; 
+    echo "<br>";
+    print "Value of x is : $x with Post-Decrement ";    
+    echo "<br>";
+    echo"<p></p>";
+
+    ?>
 </body>
 
 
