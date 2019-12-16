@@ -9,14 +9,33 @@
 </head>
 
 <body>
-    <?php 
-    
-       print "<h2> strlen() </h2>";
+    <?php
 
-       # strlen() - return the lenght of a string
-
-       echo strlen("Hello, Rondinle Guimaraes");
+    echo "<h4>This is a string for use in functions</h4>";
+    $strTitle = "Hello, Rondinle Guimaraes";
+    print $strTitle;
     
+    
+    print "<h2> strlen() </h2>";
+
+    # strlen() - return the lenght of a string
+    
+    print "The lenght is : ";
+    echo strlen($strTitle);
+
+
+    print "<h2> str_word_count()</h2>";
+
+    # str_word_count() - Count words in a string 
+    
+    print "The numbers of words in a string is : ";
+    echo str_word_count($strTitle);
+
+
+
+
+
+
     ?>
 </body>
 
