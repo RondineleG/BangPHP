@@ -148,47 +148,47 @@
        $x--        Post-Decrement      Retunrs  $x, then decrements $x by the one   
     */
 
-    
 
-    $x = 10;    
+
+    $x = 10;
     print "Value of x is : $x";
     echo "<br>";
     print "Pre-increment :";
     echo ++$x;
     echo "<br>";
-    print "Value of x is : $x with Pre-Increment ";    
+    print "Value of x is : $x with Pre-Increment ";
     echo "<br>";
-    echo"<p></p>";
+    echo "<p></p>";
 
-    $x = 20;  
+    $x = 20;
     print "Value of x is : $x";
     echo "<br>";
     print "Post-Increment   :";
-    echo $x++; 
+    echo $x++;
     echo "<br>";
-    print "Value of x is : $x with Post-Increment ";    
+    print "Value of x is : $x with Post-Increment ";
     echo "<br>";
-    echo"<p></p>";
+    echo "<p></p>";
 
-    $x = 30;  
+    $x = 30;
     print "Value of x is : $x";
     echo "<br>";
     print "Pre-Decrement :";
-    echo $x--; 
+    echo $x--;
     echo "<br>";
-    print "Value of x is : $x with Post-Decrementement ";    
+    print "Value of x is : $x with Post-Decrementement ";
     echo "<br>";
-    echo"<p></p>";
+    echo "<p></p>";
 
-    $x = 40;  
+    $x = 40;
     print "Value of x is : $x";
     echo "<br>";
     print "Post-Decrement   :";
-    echo --$x; 
+    echo --$x;
     echo "<br>";
-    print "Value of x is : $x with Post-Decrement ";    
+    print "Value of x is : $x with Post-Decrement ";
     echo "<br>";
-    echo"<p></p>";
+    echo "<p></p>";
 
     print "<h2>Logical Operators</h2>";
 
@@ -201,55 +201,43 @@
        ||          Or                   $x || $y              True if either $x or $y is true  
        !           Not                  !$x                   True if $x is not true 
  
-    */                              
-     $x = 50;
-     $y = 2;
+    */
+    $x = 50;
+    $y = 2;
 
-     print "Operator and : ";
-     
-     if($x == 50 and $y == 2)
-     {
-         print "This return is true, two condition is true";
+    print "Operator and : ";
 
-     }
-     echo "<br>";
-     print "Operator or : ";
-     if($x == 50 or $y == 20)
-     {
-         print "This return is true if one condition is true";
+    if ($x == 50 and $y == 2) {
+        print "This return is true, two condition is true";
+    }
+    echo "<br>";
+    print "Operator or : ";
+    if ($x == 50 or $y == 20) {
+        print "This return is true if one condition is true";
+    }
+    echo "<br>";
+    print "Operator xor : ";
+    if ($x == 50 xor $y == 20) {
+        print "This return is true if one condition is true, but not both";
+    }
+    echo "<br>";
 
-     }
-     echo "<br>";
-     print "Operator xor : ";
-     if($x == 50 xor $y == 20)
-     {
-         print "This return is true if one condition is true, but not both";
+    print "Operator && : ";
 
-     }
-     echo "<br>";
-
-     print "Operator && : ";
-     
-     if($x == 50 && $y == 2)
-     {
-         print "This return is true, two condition is true";
-
-     }
+    if ($x == 50 && $y == 2) {
+        print "This return is true, two condition is true";
+    }
     echo "<br>";
 
     print "Operator || : ";
-    if($x == 50 || $y == 20)
-    {
+    if ($x == 50 || $y == 20) {
         print "This return is true if one condition is true";
-
     }
     echo "<br>";
 
     print "Operator ! : ";
-    if($x !== 40 || $y == 20)
-    {
+    if ($x !== 40 || $y == 20) {
         print "This return is true if one condition is not true";
-
     }
 
     print "<h2>String Operators</h2>";
@@ -258,7 +246,7 @@
     /* Operators     Name                          Example             Description 
        .             Concatenation                  $x . $y            Concatenation of  $x and $y  
        .=            Concatenation assignment       $x .= $y            Appens $x to $y      
-   */   
+   */
 
     $txtFistName = "Rondinele";
     $txtLastName = "Guimarães";
@@ -270,38 +258,44 @@
 
     print "<h2>Array Operators</h2>";
 
-    $x = array("a" => "Red","b" => "Green",);
-    $y = array("c" => "BLue","d" => "Yellow",);
-  
-print_r($x + $y); # union of $ and $y
+    $x = array("a" => "Red", "b" => "Green",);
+    $y = array("c" => "BLue", "d" => "Yellow",);
 
-#Compare if arrays are equals
-var_dump($x == $y);
+    print_r($x + $y); # union of $ and $y
 
-#Compare if arrays are identity
-var_dump($x === $y);
+    #Compare if arrays are equals
+    var_dump($x == $y);
 
-#Compare if arrays are identity
-var_dump($x === $y);
+    #Compare if arrays are identity
+    var_dump($x === $y);
 
-#Compare if arrays are not equal
-var_dump($x != $y);
+    #Compare if arrays are identity
+    var_dump($x === $y);
 
-#Compare if arrays are not equal
-var_dump($x <> $y);
+    #Compare if arrays are not equal
+    var_dump($x != $y);
 
-#Compare if arrays are not identity
-var_dump($x !==$y);
-  
-print "<h2>Conditional Assignment Operators";
+    #Compare if arrays are not equal
+    var_dump($x <> $y);
 
-     // if empty($user) = TRUE, set $status = "anonymous"
-   echo $status = (empty($user)) ? "anonymous" : "logged in";
-   echo("<br>");
+    #Compare if arrays are not identity
+    var_dump($x !== $y);
 
-   $user = "Rondinele Guimaraes";
-   // if empty($user) = FALSE, set $status = "logged in"
-   echo $status = (empty($user)) ? "anonymous" : "logged in";
+    print "<h2>Conditional Assignment Operators";
+
+    print("<br>");
+
+    echo $status = (empty($user)) ? "Default" : "logged";
+    echo ("<br>");
+    $user = "Rondinele Guimaraes";
+    echo $status = (empty($user)) ? "Default" : "logged";
+
+    print("<br>");
+    print("<br>");
+
+    echo $user = $_GET["user"] ?? "Default";
+    echo ("<br>");
+    echo $color = $color ?? "Green";
 
     ?>
 </body>
