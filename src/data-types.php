@@ -76,7 +76,6 @@
             $this->maker = "Ford";
             $this->category = "Compact";
             $this->color = "Red";
-
         }
     }
     $ka = new Car();
@@ -89,11 +88,15 @@
     print "The color of car is : ";
     echo $ka->color;
 
+    echo "<h2>Null Value</h2>";
 
+    # this is a declaration of null value
 
-
-
-
+    $x = "Hello Word";
+    var_dump($x);
+    print("<br><br>");
+    $x = null;
+    var_dump($x);
 
     ?>
 </body>
