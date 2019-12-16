@@ -293,8 +293,15 @@ var_dump($x <> $y);
 #Compare if arrays are not identity
 var_dump($x !==$y);
   
+print "<h2>Conditional Assignment Operators";
 
-     
+     // if empty($user) = TRUE, set $status = "anonymous"
+   echo $status = (empty($user)) ? "anonymous" : "logged in";
+   echo("<br>");
+
+   $user = "Rondinele Guimaraes";
+   // if empty($user) = FALSE, set $status = "logged in"
+   echo $status = (empty($user)) ? "anonymous" : "logged in";
 
     ?>
 </body>
