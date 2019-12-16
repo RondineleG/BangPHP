@@ -14,26 +14,29 @@
     echo "<h4>This is a string for use in functions</h4>";
     $strTitle = "Hello, Rondinle Guimaraes";
     print $strTitle;
-    
-    
+
+
     print "<h2> strlen() </h2>";
 
-    # strlen() - return the lenght of a string
-    
+    # strlen() - Return the lenght of a string
+
     print "The lenght is : ";
     echo strlen($strTitle);
 
 
-    print "<h2> str_word_count()</h2>";
+    print "<h2> str_word_count() </h2>";
 
     # str_word_count() - Count words in a string 
-    
+
     print "The numbers of words in a string is : ";
     echo str_word_count($strTitle);
 
+    print "<h2> strrev() </h2>";
 
+    # strrev() - Reverse a string
 
-
+    print "The string reverse is : ";
+    echo strrev($strTitle);
 
 
     ?>
