@@ -37,10 +37,8 @@
         echo HI;
     }
 
-   constantGlobal();
+    constantGlobal();
     echo "<br>";
-
-
 
     ?>
 </body>
