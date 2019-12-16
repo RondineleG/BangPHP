@@ -16,6 +16,20 @@
     print HELLO;
     echo "<br>";
 
+    print "<h2>Constant Array</h2>";
+
+    define(
+        "cars",
+        [
+            "Alfa Romeo",
+            "Bmw",
+            "Toyota"
+        ]
+    );
+    print cars[2];
+    echo "<br>";
+
+
     ?>
 </body>
 
