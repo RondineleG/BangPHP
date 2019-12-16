@@ -275,12 +275,23 @@
   
 print_r($x + $y); # union of $ and $y
 
-#Copare if arrays are equals
+#Compare if arrays are equals
 var_dump($x == $y);
 
-#Copare if arrays are identity
+#Compare if arrays are identity
 var_dump($x === $y);
-  
+
+#Compare if arrays are identity
+var_dump($x === $y);
+
+#Compare if arrays are not equal
+var_dump($x != $y);
+
+#Compare if arrays are not equal
+var_dump($x <> $y);
+
+#Compare if arrays are not identity
+var_dump($x !==$y);
   
 
      
