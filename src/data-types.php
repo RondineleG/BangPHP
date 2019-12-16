@@ -27,6 +27,15 @@
        print "<br>";
    
 
+       echo "<h2>Integer</h2>";
+
+       # this is a declaration of integer
+       
+       $age = 27;
+       $numberPhone =1245412;
+
+       var_dump($age)
+
     ?>
 </body>
 
