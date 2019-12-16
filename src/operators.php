@@ -86,9 +86,61 @@
     print $x %= $y;
     echo "<br>";
 
+    print "<h2>Comparison Operators</h2>";
 
+    /* Operator     Name                         Example             Result 
+        ==           Equal                        $x == $y             Returns true if $x is equal to $y
+        ===         Identical                    $x === $y           Returns true if $x is equal to $y, and they are of  the same type     
+        !=          Not equal                    $x != $y            Returns true if $x is not equal to $y
+        <>          Not equal                    $x <> $y            Returns true if $x is not equal to $y  
+        !==         Not identical                $x !== $y           Returns true if $x is not equal to $y, or they are not of  the same type     
+        >           Greater than                 $x > $y             Returns true if $x is greater than $y 
+        <           Less than                    $x < $y             Returns true if $x is less than $y   
+        >=          Greater than or equal to     $x >= $y            Returns true if $x is greater than or equal to$y  
+        <=          Less than or equal to        $x <= $y            Returns true if $x is less than or equal to$y     
+        <=>         Spaceship                    $x <=>$ y           Returns an integer less than, equal to, or greatear than zero,
+                                                                     depending on if $x is less than, equal to, or greater than $y.     
+   */
 
-    ?>
+  print "Equal :";
+  var_dump ($x == $y);
+  echo "<br>";
+
+  print "Identical : ";
+  var_dump ($x === $y);
+  echo "<br>";
+
+  print "Not equal : ";
+  var_dump ( $x != $y);
+  echo "<br>";
+
+  print "Not equal : ";
+  var_dump ($x <> $y);
+  echo "<br>";
+
+  print "Not identical  :";
+  var_dump ($x !== $y);
+  echo "<br>";
+  print "Greater than :";
+  print $x !==   $y;
+  echo "<br>";
+  print "Less than  :";
+  print $x !==   $y;
+  echo "<br>";
+  print "Greater than or equal to  :";
+  print $x !==   $y;
+  echo "<br>";
+  print "Less than or equal to :";
+  print $x !==   $y;
+  echo "<br>";
+  print "Spaceship :";
+  print $x !==   $y;
+  echo "<br>";
+
+  ?>
+
 </body>
+
+
 
 </html>
