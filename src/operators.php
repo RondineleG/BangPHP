@@ -252,6 +252,22 @@
 
     }
 
+    print "<h2>String Operators</h2>";
+
+
+    /* Operators     Name                          Example             Description 
+       .             Concatenation                  $x . $y            Concatenation of  $x and $y  
+       .=            Concatenation assignment       $x .= $y            Appens $x to $y      
+   */   
+
+    $txtFistName = "Rondinele";
+    $txtLastName = "Guimarães";
+
+    print $txtFistName . $txtLastName;
+    print("<br>");
+    print $txtFistName . $txtLastName;
+    print("<br>");
+
     ?>
 </body>
 
