@@ -268,6 +268,16 @@
     print $txtFistName . $txtLastName;
     print("<br>");
 
+    print "<h2>Array Operators</h2>";
+
+    $x = array("a" => "Red","b" => "Green",);
+    $y = array("c" => "BLue","d" => "Yellow",);
+  
+print_r($x + $y); # union of $ and $y
+  
+
+     
+
     ?>
 </body>
 
