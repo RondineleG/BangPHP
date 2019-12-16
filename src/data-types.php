@@ -34,7 +34,18 @@
        $age = 27;
        $numberPhone =1245412;
 
-       var_dump($age)
+       var_dump($age);
+
+
+       echo "<h2>Float</h2>";
+
+       # this is a declaration of float
+
+       $height = 1.66;
+       $price = 6.88;
+
+       var_dump($height)
+      
 
     ?>
 </body>
