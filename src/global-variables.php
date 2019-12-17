@@ -29,11 +29,11 @@
     print "<h2>Global Variables</h2>";
     
     function addition() {
-        $GLOBALS['z'] = $GLOBALS['x'] * $GLOBALS['y'];
+        $GLOBALS['a'] = $GLOBALS['x'] * $GLOBALS['y'];
     }
      
     addition(); 
-    print $z;
+    print $a;
 
     ?>
 </body>
