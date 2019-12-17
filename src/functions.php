@@ -20,6 +20,28 @@
     
     // call the function
     writeMessage();
+
+    print "<h2>Functions with arguments</h2>";
+   function familyName($fName)
+   {
+       print("$fName <br>");
+   }
+
+   familyName("Rondinele");
+   familyName("Gabriela");
+   familyName("Beatriz");
+
+   print("<br><br>");
+
+   function familyNameYear($fName, $year)
+   {
+       print("$fName Born ins $year <br>");
+   }
+
+   familyNameYear("Rondinele", "1992");
+   familyNameYear("Gabriela", "1993");
+   familyNameYear("Beatriz",  "1992");
+
     ?>
 </body>
 
