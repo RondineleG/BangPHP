@@ -42,6 +42,16 @@
    familyNameYear("Gabriela", "1993");
    familyNameYear("Beatriz",  "1992");
 
+   print "<h2>Loosely Typed Language</h2>";
+
+   function addNumbers(int $a, int $b)
+   {    
+          return $a * $b;
+
+   }
+   
+   print addNumbers(5, "5");
+
     ?>
 </body>
 
