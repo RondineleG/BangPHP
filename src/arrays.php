@@ -35,6 +35,14 @@
     $age = array("Peter" => "35", "Ben" => "37", "Joe" => "43");
     print "Peter is " . $age['Peter'] . " years old.";
 
+    print "<h2>Loop through Associative Arrays</h2>";
+    foreach($age as $x => $x_values)
+    {
+        print"Key=" . $x .", Value=" . $x_values;
+        print"<br>";
+
+    }
+
     ?>
 </body>
 
