@@ -19,6 +19,18 @@
     print"<br>";
     // lenght of array
     print count($cars);
+
+
+    print"<h2>Loop through Indexed Arrays</h2>";
+    
+    $carrLenght = count($cars);
+
+    for($x = 0; $x < $carrLenght; $x++)
+    {
+       print $cars[$x];
+       print "<br>";
+    }
+
     ?>
 </body>
 
