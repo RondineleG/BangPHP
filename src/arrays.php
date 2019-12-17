@@ -105,6 +105,13 @@
         print "<br>";
     }
     
+    print "<h2>arsort()  by Value</h2>";
+    $age = array ("Amanda"=>"5000","Rondinele"=>"57","Beatriz"=>"400","Gabriela"=>"26");
+    arsort($age);   
+    foreach ($age as $x => $x_values) {
+        print"Key=". $x . ", Value=". $x_values;
+        print "<br>";
+    }
     
     ?>
 </body>
