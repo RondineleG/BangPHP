@@ -112,6 +112,14 @@
         print"Key=". $x . ", Value=". $x_values;
         print "<br>";
     }
+
+    print "<h2>krsort()  by Key</h2>";
+    $age = array ("Amanda"=>"50","Rondinele"=>"57","Beatriz"=>"400","Gabriela"=>"26");
+    krsort($age);   
+    foreach ($age as $x => $x_values) {
+        print"Key=". $x . ", Value=". $x_values;
+        print "<br>";
+    }
     
     ?>
 </body>
