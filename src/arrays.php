@@ -16,6 +16,9 @@
 
     print"I like " .$cars[0] . " , ".$cars[1]." and ".$cars[2].".";
     
+    print"<br>";
+    // lenght of array
+    print count($cars);
     ?>
 </body>
 
