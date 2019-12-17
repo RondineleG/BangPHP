@@ -65,8 +65,25 @@
     }
 
     print "<h2>Sort Functions For Arrays</h2>";
+
+    $numbers = array(4, 8, 6, 22, 55, 1, 2);
+    sort($numbers);
+
+    $arrayLenght = count($numbers);
+    for ($x = 0; $x < $arrayLenght; $x++) {
+        print($numbers[$x]);
+        print "<br>";
+    }
+    print "<br>";
+
     $cars = array("Volvo", "BMW", "Toyota");
-    sort($cars);
+    rsort($cars);
+
+    $carsLenght = count($cars);
+    for ($x = 0; $x < $carsLenght; $x++) {
+        print($cars[$x]);
+        print "<br>";
+    }
 
     ?>
 </body>
