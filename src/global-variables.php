@@ -25,15 +25,30 @@
     */
     $x = 75;
     $y = 25;
-     
+
     print "<h2>Global Variables</h2>";
-    
-    function addition() {
+
+    function addition()
+    {
         $GLOBALS['a'] = $GLOBALS['x'] * $GLOBALS['y'];
     }
-     
-    addition(); 
+
+    addition();
     print $a;
+
+    print "<h2>PHP $_SERVER </h2>";
+
+    print $_SERVER['PHP_SELF'];
+    print "<br>";
+    print $_SERVER['SERVER_NAME'];
+    print "<br>";
+    print $_SERVER['HTTP_HOST'];
+    print "<br>";
+    print $_SERVER['HTTP_REFERER'];
+    print "<br>";
+    print $_SERVER['HTTP_USER_AGENT'];
+    print "<br>";
+    print $_SERVER['SCRIPT_NAME'];
 
     ?>
 </body>
