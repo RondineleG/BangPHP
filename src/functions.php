@@ -52,6 +52,19 @@
    
    print addNumbers(5, "5");
 
+   print"<h2>Default Argument Value</h2>";
+
+   function setHeight(int $minheight = 50) 
+   {
+       echo "The height is : $minheight <br>";
+   }
+   
+   setHeight(350);
+   setHeight(); // default value of 50
+   setHeight(135);
+   setHeight(80);
+
+
     ?>
 </body>
 
