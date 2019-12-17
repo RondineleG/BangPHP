@@ -78,6 +78,22 @@
    echo "7 + 13 = " . sum(7, 13) . "<br>";
    echo "2 + 4 = " . sum(2, 4);
 
+   print"<h2>Return Type declarations</h2>";
+
+   function myNumber(float $a, float $b) : float
+   {
+        return $a + $b;
+   }
+
+   print myNumber(1.2, 5.2);
+   print"<br>";
+
+   function numbers(float $a, float $b) :int
+   {
+       return (int)($a + $b);
+   }
+
+   print numbers(1.2, 5.2);
     ?>
 </body>
 
