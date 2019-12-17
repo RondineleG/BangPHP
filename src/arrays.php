@@ -48,6 +48,7 @@
         array("Saab", 5, 2),
         array("Land Rover", 17, 15)
     );
+    sort($cars);
 
     echo $cars[0][0] . ": In stock: " . $cars[0][1] . ", sold: " . $cars[0][2] . ".<br>";
     echo $cars[1][0] . ": In stock: " . $cars[1][1] . ", sold: " . $cars[1][2] . ".<br>";
@@ -58,10 +59,15 @@
         echo "<p><b>Row number $row</b></p>";
         echo "<ul>";
         for ($col = 0; $col < 3; $col++) {
-          echo "<li>".$cars[$row][$col]."</li>";
+            echo "<li>" . $cars[$row][$col] . "</li>";
         }
         echo "</ul>";
-      }
+    }
+
+    print "<h2>Sort Functions For Arrays</h2>";
+    $cars = array("Volvo", "BMW", "Toyota");
+    sort($cars);
+
     ?>
 </body>
 
