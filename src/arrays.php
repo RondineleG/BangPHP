@@ -97,7 +97,7 @@
         print "<br>";
     }
 
-    print "<h2>asort() by Key</h2>";
+    print "<h2>ksort() by Key</h2>";
     $age = array ("Amanda"=>"40","Rondinele"=>"57","Beatriz"=>"400","Gabriela"=>"26");
     ksort($age);   
     foreach ($age as $x => $x_values) {
