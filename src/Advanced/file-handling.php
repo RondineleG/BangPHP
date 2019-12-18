@@ -31,7 +31,21 @@
     //close
     fclose($myFile);  
   
+    print "<h2>Check End-Of-Lif feof()</h2>";
 
+    //open
+    $myFile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+    //read one line
+   
+    while(!feof($myFile))
+    {
+        print fgets($myFile) ."<br>";
+
+    }
+    //close
+    fclose($myFile);  
+    
+      
     ?>
 </body>
 
