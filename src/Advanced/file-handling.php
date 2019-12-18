@@ -58,6 +58,17 @@
     }
     //close
     fclose($myFile); 
+
+    print "<h2>Write to file - fwrite()</h2>";
+    //open
+    $myFile = fopen("newfile.txt", "w") or die("Unable to open file!");
+    //write
+    $txt = "Rondinele";
+    fwrite($myFile, $txt);
+    $txt = "Beatriz";
+    fwrite($myFile, $txt);
+    //close
+    fclose($myFile);    
       
     ?>
 </body>
