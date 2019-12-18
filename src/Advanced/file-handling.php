@@ -63,9 +63,9 @@
     //open
     $myFile = fopen("newfile.txt", "w") or die("Unable to open file!");
     //write
-    $txt = "Rondinele";
+    $txt = "Rondinele<br>";
     fwrite($myFile, $txt);
-    $txt = "Beatriz";
+    $txt = "Beatriz<br>";
     fwrite($myFile, $txt);
     //close
     fclose($myFile);    
