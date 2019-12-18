@@ -11,7 +11,7 @@
 <body>
     <?php
     print "<h2>readfile() function</h2>";
-
+    print readfile("webdictionary.txt");
 
     ?>
 </body>
