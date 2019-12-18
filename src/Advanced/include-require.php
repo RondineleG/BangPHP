@@ -14,8 +14,9 @@
        print"<p>Welcome to my home page</p>";
        print"<p>Welcome to my home page</p>";
 
-       // include files php
+       // include and require files php
        include 'footer.php';
+       require 'footer.php';
     ?>
 </body>
 
