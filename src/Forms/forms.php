@@ -9,16 +9,16 @@
 </head>
 
 <body>
-<form action="welcome.php" method="POST">
-Name : <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-<input type="submit">
-</form>
-    <?php
-print"<h2>A simple html form</h2>";
-
+<?php
+    print "<h2>A simple html form using post method</h2>";
 
     ?>
+    <form action="welcome.php" method="POST">
+        Name : <input type="text" name="name"><br>
+        E-mail: <input type="text" name="email"><br>
+        <input type="submit">
+    </form>
+    
 </body>
 
 </html>
