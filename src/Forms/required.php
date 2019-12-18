@@ -25,18 +25,32 @@
             $nameErr = "Name is required";
         } else {
             $name = testInput($_POST["name"]);
+            //check if name contains letters and whitespace
+            if (!preg_match("/^[a-zA-Z]*$/", $name)) {
+                $nameErr = "Only letters and white space alloowed";
+            }
         }
 
         if (empty($_POST["email"])) {
             $emailErr = "Email is required";
         } else {
             $email = testInput($_POST["email"]);
+            //check if e-mail addres is well-formed
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $emailErr = "Invalid email format";
+            }
         }
 
         if (empty($_POST["website"])) {
             $website = "";
         } else {
             $website = testInput($_POST["website"]);
+            if (!preg_match(
+                "/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",
+                $website
+            )) {
+                $websiteErr = "Invalid URL";
+            }
         }
 
         if (empty($_POST["comment"])) {
@@ -86,15 +100,15 @@
 
     <?php
     print "<h2>Output:</h2>";
-    print "The name is : ". $name;
+    print "The name is : " . $name;
     print "<br>";
-    print  "The E-mail is : ". $email;
+    print  "The E-mail is : " . $email;
     print "<br>";
-    print  "The website  is : ".$website;
+    print  "The website  is : " . $website;
     print "<br>";
-    print  "The comment is : ".$comment;
+    print  "The comment is : " . $comment;
     print "<br>";
-    print  "The gender  is : ". $gender;
+    print  "The gender  is : " . $gender;
     ?>
 </body>
 
