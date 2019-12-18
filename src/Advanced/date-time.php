@@ -33,6 +33,11 @@
     date_default_timezone_set("America/New_York");
     print" The time New York is : " . date("h:i:sa")."<br>";
 
+    print"<h2>Create a date with mktime()</h2>";
+      $d= mktime(11,55,50,12,18,2000);
+      print "Created date is " . date("d-m-Y h:i A", $d);
+
+
     ?>
 </body>
 
