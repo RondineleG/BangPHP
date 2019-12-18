@@ -13,6 +13,14 @@
     print "<h2>readfile() function</h2>";
     print readfile("webdictionary.txt");
 
+    print "<h2> File Open/Read/Close</h2>";
+    //open
+    $myFile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+    //read
+    print fread($myFile, filesize("webdictionary.txt"));
+    //close
+    fclose($myFile);    
+
     ?>
 </body>
 
