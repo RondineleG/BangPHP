@@ -63,13 +63,25 @@
     //open
     $myFile = fopen("newfile.txt", "w") or die("Unable to open file!");
     //write
-    $txt = "Rondinele<br>";
+    $txt = " Rondinele " ."\n" ;
     fwrite($myFile, $txt);
-    $txt = "Beatriz<br>";
+    print"<br>";
+    $txt = " Beatriz "."\n";
     fwrite($myFile, $txt);
     //close
-    fclose($myFile);    
-      
+    fclose($myFile);  
+
+      //open
+    $myFile = fopen("newfile.txt", "r") or die("Unable to open file!");
+    //read one line
+   
+    while(!feof($myFile))
+    {
+        print fgets($myFile) ."<br>";
+
+    }
+    //close
+    fclose($myFile);  
     ?>
 </body>
 
