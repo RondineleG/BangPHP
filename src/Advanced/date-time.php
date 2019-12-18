@@ -29,7 +29,9 @@
     print"Only minutes : " . date("i")."<br>";
     print"Only seconds : " . date("s")."<br>";
    
-    
+    print"<h2>Get your time zone</h2>";
+    date_default_timezone_set("America/New_York");
+    print" The time New York is : " . date("h:i:sa")."<br>";
 
     ?>
 </body>
