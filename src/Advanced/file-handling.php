@@ -45,6 +45,19 @@
     //close
     fclose($myFile);  
     
+    print "<h2>Check single caracter fgetc()</h2>";
+
+    //open
+    $myFile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+    //read one line
+   
+    while(!feof($myFile))
+    {
+        print fgetc($myFile) ."<br>";
+
+    }
+    //close
+    fclose($myFile); 
       
     ?>
 </body>
