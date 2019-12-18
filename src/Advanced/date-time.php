@@ -33,30 +33,41 @@
     date_default_timezone_set("America/New_York");
     print " The time New York is : " . date("h:i:sa") . "<br>";
 
-     print "<h2>Create a date with mktime()</h2>";
+    print "<h2>Create a date with mktime()</h2>";
     $d = mktime(11, 55, 50, 12, 18, 2000);
     print "Created date is " . date("d-m-Y h:i A", $d);
 
     print "<h2>Create a date from string with strtotime()</h2>";
     $d = strtotime("10:30pm April 15 2020");
-    print "Created date is " . date("d-m-Y h:i A", $d) ."<br>";
-   
-    $d=strtotime("tomorrow");
+    print "Created date is " . date("d-m-Y h:i A", $d) . "<br>";
+
+    $d = strtotime("tomorrow");
     print "Tomorrow is " . date("Y-m-d h:i:sa", $d) . "<br>";
-    
-    $d=strtotime("next Saturday");
-    print "Next Saturday is : ". date("Y-m-d h:i:sa", $d) . "<br>";
-    
-    $d=strtotime("+3 Months");
-    print "+3 Months is : ".date("Y-m-d h:i:sa", $d) . "<br>";
 
-    $d=strtotime("+1 Year");
-    print "+1 Year is : ".date("Y-m-d h:i:sa", $d) . "<br>";
+    $d = strtotime("next Saturday");
+    print "Next Saturday is : " . date("Y-m-d h:i:sa", $d) . "<br>";
 
-    $d=strtotime("+10 Days");
-    print "+1 Year is : ".date("Y-m-d h:i:sa", $d) . "<br>";
+    $d = strtotime("+3 Months");
+    print "+3 Months is : " . date("Y-m-d h:i:sa", $d) . "<br>";
 
-  
+    $d = strtotime("+1 Year");
+    print "+1 Year is : " . date("Y-m-d h:i:sa", $d) . "<br>";
+
+    $d = strtotime("+10 Days");
+    print "+1 Year is : " . date("Y-m-d h:i:sa", $d) . "<br>";
+
+    print "<h2>Outputs the dates for the next six Saturdays</h2>";
+    $startdate = strtotime("Saturday");
+    $enddate = strtotime("+6 weeks", $startdate);
+
+    while ($startdate < $enddate) {
+        echo date("M d", $startdate) . "<br>";
+        $startdate = strtotime("+1 week", $startdate);
+    }
+    print "<h2>Outputs the number of days until 7th of September</h2>";
+    $d1 = strtotime("December 25");
+    $d2 = ceil(($d1 - time()) / 60/60/ 24);
+    echo "There are " . $d2 . " days until 25th of December .";
     ?>
 </body>
 
