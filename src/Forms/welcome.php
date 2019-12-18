@@ -11,8 +11,13 @@
 <body>
     Welcome
     <?php
-      print $_POST["name"]; ?><br>
-      your email is : <?php print $_POST["email"]; ?>
+    print $_POST["name"]; ?><br>
+    your email is : <?php print $_POST["email"]; ?>
+
+    Welcome
+    <?php
+    print $_GET["name"]; ?><br>
+    your email is : <?php print $_GET["email"]; ?>
 </body>
 
 </html>
