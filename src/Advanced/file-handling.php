@@ -10,6 +10,7 @@
 
 <body>
     <?php
+
     print "<h2>readfile() function</h2>";
     print readfile("webdictionary.txt");
 
@@ -20,6 +21,16 @@
     print fread($myFile, filesize("webdictionary.txt"));
     //close
     fclose($myFile);    
+
+    print "<h2>Read Single line fgets()</h2>";
+
+    //open
+    $myFile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+    //read one line
+    print fgets($myFile, filesize("webdictionary.txt"));
+    //close
+    fclose($myFile);  
+  
 
     ?>
 </body>
