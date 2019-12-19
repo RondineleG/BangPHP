@@ -45,8 +45,8 @@
 
     $orange = new Fruit();
 
-    $orange -> name = "Orange";
-    $orange -> color = "Yellow";
+    $orange->name = "Orange";
+    $orange->color = "Yellow";
 
     $apple->set_name("Apple");
     $apple->set_color("Red");
@@ -64,9 +64,13 @@
     print("Name : " . $orange->get_name());
     print("<br>");
     print("Color : " . $orange->get_color());
-    
 
 
+    print "<h2>instanceof</h2>";
+
+    $grape = new Fruit();
+
+    var_dump($grape instanceof Fruit);
 
     ?>
 </body>
