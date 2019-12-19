@@ -40,6 +40,21 @@
         print("$ip  is not a valid IPv6 addres");
     }
 
+    print "<h2>validate URL - Must contain querystring</h2>";
+
+    $url = "https://ww.w3schools.com";
+ 
+    if(!filter_var($url, FILTER_VALIDATE_URL, FILTER_FLAG_QUERY_REQUIRED)===false)
+    {
+        print ("$url is a valid URL with query string");
+
+    }
+    else
+    {
+        print ("$url is not  a valid URL with query string");
+    }
+    
+
     ?>
 </body>
 
