@@ -26,6 +26,20 @@
         print("Variable value is  within the legal range");
       }
 
+      print "<h2>validate IPv6 address</h2>";
+
+      $ip = "2001:0db8:85a3:08d3:1319:8a2e:0370";
+
+      if(!filter_var($ip,FILTER_VALIDATE_IP, FILTER_FLAG_IPV6) ===false)
+      {
+        print("$ip  is a valid IPv6 addres");
+
+    }
+    else
+    {
+        print("$ip  is not a valid IPv6 addres");
+    }
+
     ?>
 </body>
 
