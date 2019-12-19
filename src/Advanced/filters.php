@@ -36,11 +36,22 @@
     print "<h2>Validate an Integer</h2>";
 
     $int = 100.55;
-    if(!filter_var($int,FILTER_VALIDATE_INT)=== false)
-    {
-        print ("Integer is valid");
-
+    if (!filter_var($int, FILTER_VALIDATE_INT) === false) {
+        print("Integer is valid");
+    } else {
+        print("Integer is not valid");
     }
+    ?>
+
+    <?php
+    print "<h2>filter_var() and problem with 0</h2>";
+
+    $int = 0;
+    if (filter_var($int, FILTER_VALIDATE_INT) === 0 ||
+        !filter_var($int, FILTER_VALIDATE_INT) == false) 
+    {
+        print("Integer is valid");
+    } 
     else
     {
         print("Integer is not valid");
