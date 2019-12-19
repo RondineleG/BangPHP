@@ -34,10 +34,15 @@
      
     $json = '{"Rondinele":27,"Beatriz":4,"Gabriela":26}';
     $obj = json_decode($json);
+    $arr = json_decode($json, true);
 
     print($obj->Rondinele . "<br>");
     print($obj->Beatriz) . "<br>";
     print($obj->Gabriela) . "<br>";
+    print("<br>");
+    print ($arr["Rondinele"] . "<br>");
+    print($arr["Beatriz"] . "<br>");
+    print($arr["Gabriela"]. "<br>");
 
     ?>
 </body>
