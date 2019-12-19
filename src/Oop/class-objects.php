@@ -28,6 +28,16 @@
         }
     }
 
+    $apple = new Fruit();
+    $banana = new Fruit();
+
+    $apple->setName("Banana");
+    $banana->setName("Apple");
+
+    print($apple->getName());
+    print("<br>");
+    print($banana->getName());
+
 
     ?>
 </body>
