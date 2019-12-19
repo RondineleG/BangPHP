@@ -10,6 +10,7 @@
 
 <body>
     <?php
+    print "<h2>Creating class and objects</h2>";
     class Fruit
     {
         //properties
@@ -42,12 +43,29 @@
     $apple = new Fruit();
     $banana = new Fruit();
 
-    $apple->set_name("Banana");
-    $banana->set_name("Apple");
+    $orange = new Fruit();
 
-    print($apple->get_name());
+    $orange -> name = "Orange";
+    $orange -> color = "Yellow";
+
+    $apple->set_name("Apple");
+    $apple->set_color("Red");
+    $banana->set_name("Banana");
+    $banana->set_color("Red");
+
+    print("Name : " . $apple->get_name());
     print("<br>");
-    print($banana->get_name());
+    print("Color : " . $apple->get_color());
+    print("<br>");
+    print("Name : " . $banana->get_name());
+    print("<br>");
+    print("Color : " . $banana->get_color());
+    print("<br>");
+    print("Name : " . $orange->get_name());
+    print("<br>");
+    print("Color : " . $orange->get_color());
+    
+
 
 
     ?>
