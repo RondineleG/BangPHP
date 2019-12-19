@@ -20,6 +20,9 @@
     $json = '{"Rondinele":27,"Beatriz":4,"Gabriela":26}';
 
     var_dump(json_decode($json));
+    print("<br>");
+    //array associative
+    var_dump(json_decode($json,true));
 
 
     ?>
