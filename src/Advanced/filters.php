@@ -35,7 +35,7 @@
     <?php
     print "<h2>Validate an Integer</h2>";
 
-    $int = 100.55;
+    $int = 0;
     if (!filter_var($int, FILTER_VALIDATE_INT) === false) {
         print("Integer is valid");
     } else {
