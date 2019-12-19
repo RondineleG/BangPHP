@@ -33,13 +33,21 @@
               print "File is not a image";
               $uploadOK = 0;
           }
-        // check if file aready exists
-
+        
+          // check if file aready exists
         if(file_exists($targetFile))
         {
             print "File aready exists!";
             $uploadOK = 0;
         }
+
+         // check  file size
+
+         if($_FILES["fileToUpload"]["size"] > 5000000)
+         {
+             print "Your file is too large";
+             $uploadOK = 0;
+         }
 
       }
 
