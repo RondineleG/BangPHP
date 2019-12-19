@@ -10,11 +10,18 @@
 
 <body>
     <?php
-      print "<h2>json_encode()</h2>";
-      $age = array ("Rondinele"=>27, "Beatriz"=>4,"Gabriela"=>26);
+    print "<h2>json_encode()</h2>";
+    $age = array("Rondinele" => 27, "Beatriz" => 4, "Gabriela" => 26);
 
-     print(json_encode($age));
-     
+    print(json_encode($age));
+
+    print "<h2>json_decode()</h2>";
+
+    $json = '{"Rondinele":27,"Beatriz":4,"Gabriela":26}';
+
+    var_dump(json_decode($json));
+
+
     ?>
 </body>
 
