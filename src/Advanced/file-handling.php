@@ -80,7 +80,7 @@
     //close
     fclose($newFile);
 
-   
+
     print "<h2>Read json()</h2>";
 
     //open
@@ -106,7 +106,24 @@
     //close
     fclose($myFile);
 
-    
+    print "<h2>Overwriting</h2>";
+
+    $myFile = fopen("newfile.txt", "w") or die("Unable to open file !");
+    $txt = "Mickey Mouse" ."\n";
+    fwrite($myFile, $txt);
+    $txt = "Mickey Mouse". "\n";
+    fwrite($myFile, $txt);
+    fclose($myFile);
+    //open
+    $myFile = fopen("newfile.txt", "r") or die("Unable to open file!");
+    //read one line
+
+    while (!feof($myFile)) {
+        print fgets($myFile) . "<br>";
+    }
+    //close
+    fclose($myFile);
+
     ?>
 </body>
 
