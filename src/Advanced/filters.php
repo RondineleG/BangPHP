@@ -16,21 +16,37 @@
         <tr>
 
             <?php
-               print "<h2>Creating filters with filter_list()</h2>";
+            print "<h2>Creating filters with filter_list()</h2>";
             foreach (filter_list() as $id => $filter) {
                 print '<tr><td>' . $filter . '</td><td>' . filter_id($filter) . '</td></tr>';
             }
 
             ?>
     </table>
-     <?php 
-       print "<h2>Creating filters with filter_var()</h2>";
+    <?php
+    print "<h2>Creating filters with filter_var()</h2>";
 
-       $str = "<h1>Hello world!</h1>";
-       $newStr = filter_var($str, FILTER_SANITIZE_STRING);
-       print $newStr;
-      
-      ?>
+    $str = "<h1>Hello world!</h1>";
+    $newStr = filter_var($str, FILTER_SANITIZE_STRING);
+    print $newStr;
+
+    ?>
+
+    <?php
+    print "<h2>Validate an Integer</h2>";
+
+    $int = 100.55;
+    if(!filter_var($int,FILTER_VALIDATE_INT)=== false)
+    {
+        print ("Integer is valid");
+
+    }
+    else
+    {
+        print("Integer is not valid");
+    }
+
+    ?>
 </body>
 
 </html>
