@@ -16,7 +16,18 @@
         public $name;
         public $color;
 
+        //methods
+        function setName($name)
+        {
+            $this->name = $name;
+        }
+
+        function getName()
+        {
+            return $this->name;
+        }
     }
+
 
     ?>
 </body>
