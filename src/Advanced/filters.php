@@ -90,6 +90,28 @@
     }
     
     ?>
+   <?php
+
+    print "<h2>Sanitize and validate a URLs</h2>";
+     
+     $url = "https://www..w3schools.com";
+ 
+     //remove all illegal caracters from url
+ 
+     $url = filter_var($url, FILTER_SANITIZE_URL);
+ 
+     //validate url
+     if(!filter_var($url, FILTER_VALIDATE_URL)===false)
+     {
+         print ("$url is a valid URL");
+ 
+     }
+     else
+     {
+         print ("$url is not  a valid URL");
+     }
+     
+     ?>
 </body>
 
 </html>
