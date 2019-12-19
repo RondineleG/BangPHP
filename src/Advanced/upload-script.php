@@ -33,6 +33,13 @@
               print "File is not a image";
               $uploadOK = 0;
           }
+        // check if file aready exists
+
+        if(file_exists($targetFile))
+        {
+            print "File aready exists!";
+            $uploadOK = 0;
+        }
 
       }
 
