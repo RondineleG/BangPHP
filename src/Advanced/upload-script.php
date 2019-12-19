@@ -10,6 +10,7 @@
 
 <body>
     <?php
+    
       $targetDirectory ="uploads/";
       $targetFile = $targetDirectory . basename($_FILES['fileUpload']['name']);
       
@@ -56,6 +57,27 @@
              print "Only files formats supported, jpg, png, jpeg and gif";
              $uploadOK = 0;
          }
+
+         // check is $uploadOK is set to 0 by an error
+         if($uploadOK ==0)
+         {
+            print "Your file was not uploaded";
+         }
+         // check if everythinh is ok and try to upload file
+         else
+         {  
+             if(move_uploaded_file($_FILES["fileToUpload"]["tmpName"], $targetFile))
+             {
+                 print "The file " . basename($_FILES["fileToUpload"]["name"]).
+                 "has been uploaded";
+             }
+             else
+             {
+                print "Error to upload";
+             }
+
+         }
+         
 
       }
 
