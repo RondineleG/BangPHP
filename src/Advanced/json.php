@@ -30,6 +30,14 @@
     //To upper
     var_dump(json_decode(strtoupper($json)));
 
+    print "<h2>Accessing the Decoded values</h2>";
+     
+    $json = '{"Rondinele":27,"Beatriz":4,"Gabriela":26}';
+    $obj = json_decode($json);
+
+    print($obj->Rondinele . "<br>");
+    print($obj->Beatriz) . "<br>";
+    print($obj->Gabriela) . "<br>";
 
     ?>
 </body>
