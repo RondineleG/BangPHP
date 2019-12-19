@@ -23,6 +23,14 @@ session_start();
     print "Favorite animal is " . $_SESSION["favanimal"] = "dog<br>";
     print "Print session <br>";
     print_r($_SESSION);
+
+    //remove all session variable
+    session_unset();
+
+
+    //destroy the session
+    session_destroy();
+
     ?>
 </body>
 
