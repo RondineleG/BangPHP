@@ -58,6 +58,20 @@
     }
 
     ?>
+    <?php
+
+    print "<h2>Validate IP Address</h2>";
+
+    $ip = "0";
+    if (!filter_var($ip, FILTER_VALIDATE_IP) === false) 
+    {
+        print("$ip is a valid IP address");
+    } 
+    else
+    {
+        print("$ip is not a valid IP address");
+    }
+    ?>
 </body>
 
 </html>
