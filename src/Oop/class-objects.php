@@ -12,6 +12,10 @@
     <?php
     class Fruit
     {
+        //properties
+        public $name;
+        public $color;
+
     }
 
     ?>
