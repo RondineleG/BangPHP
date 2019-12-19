@@ -22,7 +22,7 @@
     var_dump(json_decode($json));
     print("<br>");
     //array associative
-    var_dump(json_decode($json,true));
+    var_dump(json_decode($json, true));
     print("<br>");
     //To upper
     var_dump(json_decode(strtolower($json)));
@@ -31,19 +31,31 @@
     var_dump(json_decode(strtoupper($json)));
 
     print "<h2>Accessing the Decoded values</h2>";
-     
+
     $json = '{"Rondinele":27,"Beatriz":4,"Gabriela":26}';
     $obj = json_decode($json);
     $arr = json_decode($json, true);
 
     print($obj->Rondinele . "<br>");
-    print($obj->Beatriz) . "<br>";
-    print($obj->Gabriela) . "<br>";
+    print ($obj->Beatriz) . "<br>";
+    print ($obj->Gabriela) . "<br>";
     print("<br>");
-    print ($arr["Rondinele"] . "<br>");
+    print($arr["Rondinele"] . "<br>");
     print($arr["Beatriz"] . "<br>");
-    print($arr["Gabriela"]. "<br>");
+    print($arr["Gabriela"] . "<br>");
 
+    print "<h2>Looping throught the values</h2>";
+
+    print("Show of object <br>");
+    print("<br>");
+    foreach ($obj as $key => $value) {
+        print($key . " -> " . $value . "<br>");
+    }
+    print("Show of array <br>");
+    print("<br>");
+    foreach ($arr as $key => $value) {
+        print($key . " -> " . $value . "<br>");
+    }
     ?>
 </body>
 
