@@ -23,6 +23,12 @@
     print("<br>");
     //array associative
     var_dump(json_decode($json,true));
+    print("<br>");
+    //To upper
+    var_dump(json_decode(strtolower($json)));
+    print("<br>");
+    //To upper
+    var_dump(json_decode(strtoupper($json)));
 
 
     ?>
