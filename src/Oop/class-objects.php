@@ -17,26 +17,37 @@
         public $color;
 
         //methods
-        function setName($name)
+
+        function set_name($name)
         {
             $this->name = $name;
         }
 
-        function getName()
+        function get_name()
         {
             return $this->name;
+        }
+
+        function set_color($color)
+        {
+            $this->color = $color;
+        }
+
+        function get_color()
+        {
+            return $this->color;
         }
     }
 
     $apple = new Fruit();
     $banana = new Fruit();
 
-    $apple->setName("Banana");
-    $banana->setName("Apple");
+    $apple->set_name("Banana");
+    $banana->set_name("Apple");
 
-    print($apple->getName());
+    print($apple->get_name());
     print("<br>");
-    print($banana->getName());
+    print($banana->get_name());
 
 
     ?>
