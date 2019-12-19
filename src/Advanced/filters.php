@@ -47,13 +47,12 @@
     print "<h2>filter_var() and problem with 0</h2>";
 
     $int = 0;
-    if (filter_var($int, FILTER_VALIDATE_INT) === 0 ||
-        !filter_var($int, FILTER_VALIDATE_INT) == false) 
-    {
+    if (
+        filter_var($int, FILTER_VALIDATE_INT) === 0 ||
+        !filter_var($int, FILTER_VALIDATE_INT) == false
+    ) {
         print("Integer is valid");
-    } 
-    else
-    {
+    } else {
         print("Integer is not valid");
     }
 
@@ -63,14 +62,33 @@
     print "<h2>Validate IP Address</h2>";
 
     $ip = "0";
-    if (!filter_var($ip, FILTER_VALIDATE_IP) === false) 
-    {
+    if (!filter_var($ip, FILTER_VALIDATE_IP) === false) {
         print("$ip is a valid IP address");
-    } 
-    else
-    {
+    } else {
         print("$ip is not a valid IP address");
     }
+    ?>
+    <?php
+
+    print "<h2>Sanitize and validate an email address</h2>";
+     
+    $email = "rondineleg#gmail.com";
+
+    //remove all illegal caracters from email
+
+    $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+
+    //validate email
+    if(!filter_var($email, FILTER_VALIDATE_EMAIL)===false)
+    {
+        print ("$email is a valid email address");
+
+    }
+    else
+    {
+        print ("$email is not  a valid email address");
+    }
+    
     ?>
 </body>
 
