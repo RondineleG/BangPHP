@@ -16,13 +16,21 @@
         <tr>
 
             <?php
-               print "<h2>Creating filters</h2>";
+               print "<h2>Creating filters with filter_list()</h2>";
             foreach (filter_list() as $id => $filter) {
                 print '<tr><td>' . $filter . '</td><td>' . filter_id($filter) . '</td></tr>';
             }
 
             ?>
     </table>
+     <?php 
+       print "<h2>Creating filters with filter_var()</h2>";
+
+       $str = "<h1>Hello world!</h1>";
+       $newStr = filter_var($str, FILTER_SANITIZE_STRING);
+       print $newStr;
+      
+      ?>
 </body>
 
 </html>
