@@ -19,9 +19,10 @@
 
      //create connection
      $connection = new mysqli($servername,$username,$password);
+     $connect = mysqli_connect($servername,$username,$password);
      
      //check connection
-     if($connection -> connect_error)
+     if($connection -> connect_error || $connect -> connect_error)
      {
          die("Connection failed: " . $connection->connect_error);
      }
