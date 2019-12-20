@@ -13,8 +13,16 @@
         class Goodbye
         {
             const LEAVING_MESSAGE = "Thank you for visiting w3schools.com!";
+       
+            public function byebye()
+            {
+                echo self ::LEAVING_MESSAGE;
+            }
         }
-
+        
+        $goodbye = new Goodbye();
+        $goodbye->byebye();
+        echo"<br>";
         echo Goodbye::LEAVING_MESSAGE;
     ?>
 </body>
