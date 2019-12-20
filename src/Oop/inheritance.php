@@ -66,6 +66,43 @@
     //ok. message() is a public an it calls intro() (which is protected) from within the devired class
     echo ("<br>");
     $strawberry ->intro();
+
+    // The final keyword to prevent class or methods overriding
+    final class Day
+    {
+        
+    }
+
+    /*
+    will result in error
+    class Hour extends Day
+    {
+
+    }
+
+    */
+     
+    class Year
+    {
+        //The final keyword for methods
+        final public function intro()
+        {
+
+        }
+
+    }
+    class Month extends Year
+    {
+        /*
+        
+        will result in error
+
+         public function intro()
+         {
+
+         }
+         */
+    }
     ?>
 </body>
 
