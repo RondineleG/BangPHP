@@ -22,7 +22,7 @@
             $this->color = $color;            
         }
 
-        public function intro()
+        protected function intro()
         {
             echo "The fruit i {$this->name} and the color is {$this->color}.";
         }
@@ -35,16 +35,17 @@
             echo "Am i a fruit os berry ?";
         }
     }
-    $strawberry = new Strawberry("Strawberry", "red");
+    //try to call all methods from outside class
+    $strawberry = new Strawberry("Strawberry", "red"); //ok
     echo "Name : ". $strawberry ->name;
     echo("<br>");
     echo "Color : ". $strawberry ->color;
     echo("<br>");
 
-    $strawberry ->message();
+    $strawberry ->message(); //ok
     echo("<br>"); 
-    
-    $strawberry ->intro();
+
+    #$strawberry ->intro(); // ERROR . intro() is protected
     ?>
 </body>
 
