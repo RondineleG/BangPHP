@@ -18,8 +18,8 @@
 
         public function __construct($name, $color)
         {
-            $this -> name = $name;
-            $this->color = $color;            
+            $this->name = $name;
+            $this->color = $color;
         }
 
         protected function intro()
@@ -30,29 +30,42 @@
 
     class Strawberry extends Fruit
     {
+        public $weight;
+        public function __construct($name, $color,$weight)
+        {
+
+            $this->name = $name;
+            $this->color = $color;
+            $this->weight = $weight;
+        }
+
+        protected function intro()
+        {
+            echo "The fruit i {$this->name} and the 
+            color is {$this->color}, and weight is {$this->weight} gram.";
+        }
         public function message()
         {
             echo "Am i a fruit os berry ?<br>";
 
             //call protected method from within derived class - Ok
 
-            $this->intro();
+               $this -> intro();
         }
     }
     //try to call all methods from outside class
-    $strawberry = new Strawberry("Strawberry", "red"); //ok
+    $strawberry = new Strawberry("Strawberry", "red", 100); //ok
     // __constructor() is public
 
-    echo "Name : ". $strawberry ->name;
-    echo("<br>");
-    echo "Color : ". $strawberry ->color;
-    echo("<br>");
+    echo "Name : " . $strawberry->name;
+    echo ("<br>");
+    echo "Color : " . $strawberry->color;
+    echo ("<br>");
 
-    $strawberry ->message(); 
+    $strawberry->message();
     //ok. message() is a public an it calls intro() (which is protected) from within the devired class
-    echo("<br>"); 
-
-    #$strawberry ->intro(); // ERROR . intro() is protected
+    echo ("<br>");
+    $strawberry ->intro();
     ?>
 </body>
 
