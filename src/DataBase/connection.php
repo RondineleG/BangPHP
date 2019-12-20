@@ -18,7 +18,7 @@
     $password = "password";
 
     //create connection
-    $connection = new mysqli($servername, $username, $password);
+    $connect = new mysqli($servername, $username, $password);
     $connect = mysqli_connect($servername, $username, $password);
 
     //check connection
@@ -35,7 +35,15 @@
     } catch (PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
     }
+    //MySQLi Object-Oriented:
 
+     $connect-> close();
+
+    //  MySQLi Procedural:
+     mysqli_close($connect);
+    
+    //PDO:
+    $connection = null;
     ?>
 
 </body>
