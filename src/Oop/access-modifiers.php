@@ -10,19 +10,35 @@
 
 <body>
     <?php
-       class Fruit
-       {
-           public $name;
-           protected $color;
-           private $weight;
-       }
+    class Fruit
+    {
+        public $name;
+        protected $color;
+        private $weight;
 
-       $mango = new Fruit();
-       $mango -> name = "Mangos"; // ok
-       #$mango -> color = "Yellow"; //error
-       #$mango -> weight = "300"; //error
+        //a oublic function(default value)
+        function set_name($n)
+        {
+            $this->name = $n;
+        }
+        //a protected function
+       protected function set_color($n)
+        {
+            $this->color = $n;
+        }
+        //a private function
+      private function set_weight($n)
+        {
+            $this->weight = $n;
+        }
+    }
 
-       echo($mango -> name);
+    $mango = new Fruit();
+    $mango->name = "Mangos"; // ok
+    #$mango -> color = "Yellow"; //error
+    #$mango -> weight = "300"; //error
+
+    echo ($mango->name);
     ?>
 </body>
 
