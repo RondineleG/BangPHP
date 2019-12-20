@@ -23,20 +23,15 @@
     echo $aboutMe;
     print "Author : ";
     //concatenations strings using "."
-    echo $fistName . "" . $lastName;
+    echo $fistName . " " . $lastName;
     print "<br>";
 
     var_dump($fistName);
-    if(is_string($fistName))
-    {
-        print" The $fistName is a string";
-
+    if (is_string($fistName)) {
+        print " The $fistName is a string";
+    } else {
+        print "The $fistName is not a string";
     }
-    else
-    {
-        print"The $fistName is not a string";
-    }
-
 
     echo "<h2>Integer</h2>";
 
@@ -47,6 +42,11 @@
 
     var_dump($age);
 
+    if (is_int($age)) {
+        print " The $age is a int";
+    } else {
+        print "The $age is not a int";
+    }
 
     echo "<h2>Float</h2>";
 
