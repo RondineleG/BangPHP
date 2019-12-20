@@ -7,20 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Learning PHP</title>
     <style>
-       h1{
-           text-align: center;
-           padding-top: 100px;
-           color: green;
-       }
-    
+        h1 {
+            text-align: center;
+            padding-top: 10px;
+            color: green;
+        }
     </style>
 </head>
 
 <body>
+    <h1 onclick="msg()">My name is :</h1>
+    <h1>Learning PHP With</h1>
     <?php
-      print("<h1>Learning PHP With W3Schools</h1>");
+    print("<h1>wwww.w3schools.com</h1>");
     ?>
-    
+
+    <script>
+        var name = "Rondinele";
+
+        function message() {
+            return alert(name);
+        }
+    </script>
 </body>
 
 </html>
