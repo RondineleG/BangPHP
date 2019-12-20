@@ -32,17 +32,24 @@
     {
         public function message()
         {
-            echo "Am i a fruit os berry ?";
+            echo "Am i a fruit os berry ?<br>";
+
+            //call protected method from within derived class - Ok
+
+            $this->intro();
         }
     }
     //try to call all methods from outside class
     $strawberry = new Strawberry("Strawberry", "red"); //ok
+    // __constructor() is public
+
     echo "Name : ". $strawberry ->name;
     echo("<br>");
     echo "Color : ". $strawberry ->color;
     echo("<br>");
 
-    $strawberry ->message(); //ok
+    $strawberry ->message(); 
+    //ok. message() is a public an it calls intro() (which is protected) from within the devired class
     echo("<br>"); 
 
     #$strawberry ->intro(); // ERROR . intro() is protected
