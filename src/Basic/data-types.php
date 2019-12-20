@@ -14,7 +14,7 @@
 
     # this is a declaration of string 
 
-    $fistName = "Rondiele";
+    $fistName = "Rondinele";
     $lastName = "Guimarães";
     $aboutMe = "<p>I'm studying, i really this area,<br>
         i don't understand everything very well. But my persistence is very
@@ -25,6 +25,17 @@
     //concatenations strings using "."
     echo $fistName . "" . $lastName;
     print "<br>";
+
+    var_dump($fistName);
+    if(is_string($fistName))
+    {
+        print" The $fistName is a string";
+
+    }
+    else
+    {
+        print"The $fistName is not a string";
+    }
 
 
     echo "<h2>Integer</h2>";
