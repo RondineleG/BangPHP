@@ -36,21 +36,37 @@
     $connection->close();
 
     // Create connection
-    $conn = mysqli_connect($servername, $username, $password);
+    $connectionProcedural = mysqli_connect($servername, $username, $password);
     // Check connection
-    if (!$conn) {
+    if (!$connectionProcedural) {
         die("Connection failed: " . mysqli_connect_error());
     }
 
     // Create database
     $sql = "CREATE DATABASE myDB";
-    if (mysqli_query($conn, $sql)) {
+    if (mysqli_query($cconnectionProceduralonn, $sql)) {
         echo "Database created successfully";
     } else {
-        echo "Error creating database: " . mysqli_error($conn);
+        echo "Error creating database: " . mysqli_error($connectionProcedural);
     }
 
-    mysqli_close($conn);
+    mysqli_close($conconnectionProceduraln);
+
+    try {
+        $connectionPDO = new PDO("mysql:host=$servername", $username, $password);
+        // set the PDO error mode to exception
+        $connectionPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $sql = "CREATE DATABASE myDBPDO";
+        // use exec() because no results are returned
+        $connectionPDO->exec($sql);
+        echo "Database created successfully<br>";
+        }
+    catch(PDOException $e)
+        {
+        echo $sql . "<br>" . $e->getMessage();
+        }
+    
+    $conn = null;
 
     ?>
 
