@@ -17,12 +17,19 @@
         {
             echo"Hello World!";
         }
+
+        public function __construct()
+        {
+           self::Welcome();            
+        }
     }
 
 
         // Call static method
 
         greeting::Welcome();
+        print"<br>";
+        new greeting();
     ?>
 </body>
 
