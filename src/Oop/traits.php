@@ -10,21 +10,38 @@
 
 <body>
     <?php
-       trait message
-       {
-          public function msg()
-          {
-              echo"OOP is fun";
-          }
-       }
+    trait message
+    {
+        public function msg()
+        {
+            echo "OOP is fun";
+        }
+    }
+    trait message2
+    {
+        public function msg2()
+        {
+            echo "OOP reduces code duplication!";
+        }
+    }
+    class Welcome
+    {
+        use message;
+    }
+    class Welcome2
+    {
+        use message, message2;
+    }
 
-       class Welcome
-       {
-           use message;
-       }
+    $obj = new Welcome();
+    $obj->msg();
+    echo"<br>";
 
-       $obj = new Welcome();
-       $obj->msg();
+
+    $obj2 = new Welcome2();
+    $obj2->msg();
+    echo"<br>";
+    $obj2->msg2();
     ?>
 </body>
 
