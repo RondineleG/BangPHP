@@ -10,7 +10,7 @@
 
 <body>
     <?php
-    
+
     //Parent class
     abstract class Car
     {
@@ -21,7 +21,7 @@
             $this->name = $name;
         }
 
-        abstract public function intro():string;
+        abstract public function intro(): string;
     }
 
     //Child classes
@@ -33,7 +33,7 @@
             return "Choose German quality! I'm an $this->name!";
         }
     }
-    
+
 
     class Volvo extends Car
     {
@@ -63,10 +63,41 @@
     echo "<br>";
     $citroen = new Citroen("Citroen");
     echo $citroen->intro();
-    echo "<br>"
+    echo "<br>";
 
+    abstract class ParentClass
+    {
+        //abstract method with an argument
 
+        abstract protected function prefixName($name);
+    }
 
+    class ChildClass extends ParentClass
+    {
+
+        //optional arguments
+        public function prefixName($name, $separator = ".", $greeet = "Deear")
+        {
+            if ($name == "John Doe") {
+                $prefix = "Mr";
+            }
+            elseif($name == "Jane Doe")
+            {
+                 $prefix = "Mrs";
+            }
+            else
+            {
+                $prefix="";
+            }
+          return"{$greeet} {$prefix}{$separator}{$name}";
+        }
+    }
+
+    $class = new ChildClass;
+
+    echo $class -> prefixName("John Doe");
+    echo"<br>";
+    echo $class -> prefixName("Jane Doe");
     ?>
 </body>
 
