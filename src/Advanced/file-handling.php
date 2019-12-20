@@ -109,9 +109,9 @@
     print "<h2>Overwriting</h2>";
 
     $myFile = fopen("newfile.txt", "w") or die("Unable to open file !");
-    $txt = "Mickey Mouse" ."\n";
+    $txt = "Mickey Mouse" . "\n";
     fwrite($myFile, $txt);
-    $txt = "Mickey Mouse". "\n";
+    $txt = "Mickey Mouse" . "\n";
     fwrite($myFile, $txt);
     fclose($myFile);
     //open

@@ -18,13 +18,11 @@ setcookie($cookieName, $cookieValue, time() + (86400 * 30), "/"); //86400 = 1 da
 <body>
     <?php
     print "<h2>Create/Retrieve a Cookie</h2>";
-    if (!isset($_COOKIE[$cookieName])) 
-    {
+    if (!isset($_COOKIE[$cookieName])) {
         print "Cookie named " . $cookieName . "is not set!";
-    } else
-    {
+    } else {
         print "Cookie " . $cookieName . " is set!<br>";
-        print "Value is : " . $_COOKIE[$cookieName] ;
+        print "Value is : " . $_COOKIE[$cookieName];
     }
     ?>
 </body>

@@ -66,7 +66,7 @@
     }
     print "<h2>Outputs the number of days until 7th of September</h2>";
     $d1 = strtotime("December 25");
-    $d2 = ceil(($d1 - time()) / 60/60/ 24);
+    $d2 = ceil(($d1 - time()) / 60 / 60 / 24);
     echo "There are " . $d2 . " days until 25th of December .";
     ?>
 </body>

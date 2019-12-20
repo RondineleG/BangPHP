@@ -10,13 +10,13 @@
 
 <body>
     <?php
-       print"<h1>Welcome to my home page</h1>";
-       print"<p>Welcome to my home page</p>";
-       print"<p>Welcome to my home page</p>";
+    print "<h1>Welcome to my home page</h1>";
+    print "<p>Welcome to my home page</p>";
+    print "<p>Welcome to my home page</p>";
 
-       // include and require files php
-       include 'footer.php';
-       require 'footer.php';
+    // include and require files php
+    include 'footer.php';
+    require 'footer.php';
     ?>
 </body>
 

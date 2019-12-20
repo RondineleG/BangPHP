@@ -65,7 +65,7 @@
     }
 
     print "<h2>Functions For Arrays</h2>";
-    
+
     print "<h2>sort()</h2>";
 
     $numbers = array(4, 8, 6, 22, 55, 1, 2);
@@ -88,39 +88,39 @@
         print "<br>";
     }
     print "<h2>asort() by Value</h2>";
-    $age = array ("Rondinele"=>"27","Beatriz"=>"40","Gabriela"=>"26");
+    $age = array("Rondinele" => "27", "Beatriz" => "40", "Gabriela" => "26");
     asort($age);
 
     $ageLenght = count($age);
     foreach ($age as $x => $x_values) {
-        print"Key=". $x . ", Value=". $x_values;
+        print "Key=" . $x . ", Value=" . $x_values;
         print "<br>";
     }
 
     print "<h2>ksort() by Key</h2>";
-    $age = array ("Amanda"=>"40","Rondinele"=>"57","Beatriz"=>"400","Gabriela"=>"26");
-    ksort($age);   
+    $age = array("Amanda" => "40", "Rondinele" => "57", "Beatriz" => "400", "Gabriela" => "26");
+    ksort($age);
     foreach ($age as $x => $x_values) {
-        print"Key=". $x . ", Value=". $x_values;
+        print "Key=" . $x . ", Value=" . $x_values;
         print "<br>";
     }
-    
+
     print "<h2>arsort()  by Value</h2>";
-    $age = array ("Amanda"=>"5000","Rondinele"=>"57","Beatriz"=>"400","Gabriela"=>"26");
-    arsort($age);   
+    $age = array("Amanda" => "5000", "Rondinele" => "57", "Beatriz" => "400", "Gabriela" => "26");
+    arsort($age);
     foreach ($age as $x => $x_values) {
-        print"Key=". $x . ", Value=". $x_values;
+        print "Key=" . $x . ", Value=" . $x_values;
         print "<br>";
     }
 
     print "<h2>krsort()  by Key</h2>";
-    $age = array ("Amanda"=>"50","Rondinele"=>"57","Beatriz"=>"400","Gabriela"=>"26");
-    krsort($age);   
+    $age = array("Amanda" => "50", "Rondinele" => "57", "Beatriz" => "400", "Gabriela" => "26");
+    krsort($age);
     foreach ($age as $x => $x_values) {
-        print"Key=". $x . ", Value=". $x_values;
+        print "Key=" . $x . ", Value=" . $x_values;
         print "<br>";
     }
-    
+
     ?>
 </body>
 

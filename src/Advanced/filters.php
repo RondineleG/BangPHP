@@ -71,7 +71,7 @@
     <?php
 
     print "<h2>Sanitize and validate an email address</h2>";
-     
+
     $email = "rondineleg#gmail.com";
 
     //remove all illegal caracters from email
@@ -79,39 +79,31 @@
     $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
     //validate email
-    if(!filter_var($email, FILTER_VALIDATE_EMAIL)===false)
-    {
-        print ("$email is a valid email address");
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+        print("$email is a valid email address");
+    } else {
+        print("$email is not  a valid email address");
+    }
 
-    }
-    else
-    {
-        print ("$email is not  a valid email address");
-    }
-    
     ?>
-   <?php
+    <?php
 
     print "<h2>Sanitize and validate a URLs</h2>";
-     
-     $url = "https://www..w3schools.com";
- 
-     //remove all illegal caracters from url
- 
-     $url = filter_var($url, FILTER_SANITIZE_URL);
- 
-     //validate url
-     if(!filter_var($url, FILTER_VALIDATE_URL)===false)
-     {
-         print ("$url is a valid URL");
- 
-     }
-     else
-     {
-         print ("$url is not  a valid URL");
-     }
-     
-     ?>
+
+    $url = "https://www..w3schools.com";
+
+    //remove all illegal caracters from url
+
+    $url = filter_var($url, FILTER_SANITIZE_URL);
+
+    //validate url
+    if (!filter_var($url, FILTER_VALIDATE_URL) === false) {
+        print("$url is a valid URL");
+    } else {
+        print("$url is not  a valid URL");
+    }
+
+    ?>
 </body>
 
 </html>
