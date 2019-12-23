@@ -43,12 +43,23 @@
 
     $connection->close();
 
+
     // Create connection MySQLi Procedural
     $connection = mysqli_connect($severname, $username, $password, $dbname);
 
       if(!$connection)
       { 
         printf("Can't connect to localhost. Error: %s\n", mysqli_connect_error());}
+
+        if(mysqli_query($connection, $sql))
+        {
+            print"Table created successfully";
+        }
+        else
+        {
+            print"Error creanting table : " . mysqli_error($connection);
+        }
+        $connection->close();
     ?>
 </body>
 
