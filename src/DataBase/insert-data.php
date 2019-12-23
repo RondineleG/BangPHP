@@ -10,7 +10,7 @@
 
 <body>
     <?php
-    print("<h2>Create table</h2>");
+    print("<h2>Insert Data</h2>");
 
     $severname = "localhost";
     $username = "username";
