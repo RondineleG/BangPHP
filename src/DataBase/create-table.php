@@ -79,7 +79,7 @@
     )";
 
         // use exec() bacause no result are returned
-
+        $conn->exec($sql);
     } catch (PDOException $ex) {
 
         print $sql . "<br>" . $ex->getMessage();
