@@ -17,7 +17,7 @@
     $password = "password";
     $db = "bname";
 
-    // Create connection
+    // Create connection MySQLi Object-oriented
 
     $connection = new mysqli($severname, $username, $password, $dbname);
 
@@ -43,6 +43,12 @@
 
     $connection->close();
 
+    // Create connection MySQLi Procedural
+    $connection = mysqli_connect($severname, $username, $password, $dbname);
+
+      if(!$connection)
+      { 
+        printf("Can't connect to localhost. Error: %s\n", mysqli_connect_error());}
     ?>
 </body>
 
