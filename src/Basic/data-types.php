@@ -89,7 +89,7 @@
             $this->color = "Red";
         }
     }
-    $ka = new Car();
+    $ka = new Car("Category");
     print "The maker of car is : ";
     echo $ka->maker;
     print "<br>";
