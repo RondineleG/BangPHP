@@ -4,7 +4,7 @@
 class Vehicle
 {
 
-    public $model;
+    private $model;
     public $color;
     public $year;
 
@@ -17,6 +17,15 @@ class Vehicle
     {
         print("Stoping");
     }
+    public function getModel()
+    {
+        return $this->model;
+    }    
+    public function setModel($model)
+    {
+        $this->model = $model;       
+    }
+     
 }
 class Car extends Vehicle
 {
@@ -32,6 +41,9 @@ class Motorcycle extends Vehicle
     {
         print "Cram in 321";
     }
+
+    
+    
 }
 
 $car = new Car();
@@ -51,3 +63,14 @@ $motorcycle->Stop();
 print "<br>";
 $motorcycle->Cram();
 var_dump($motorcycle);
+
+
+$vehicle = new Vehicle();
+$vehicle->model ="Gol";
+$vehicle->color ="Black";
+$vehicle->year ="2011";
+$vehicle->Stop();
+print "<br>";
+print $vehicle->getModel();
+var_dump($vehicle);
+
