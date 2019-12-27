@@ -4,12 +4,24 @@ class Login
 {
     private $email;
     private $password;
+    private $name;
 
+
+    public function __construct($email, $password, $name)
+    {
+        $this->name= $name;
+        $this->setEmail($email);
+        $this->setPassword($password);
+    }
        public function getEmail()
     {
         return $this->email;
     }
 
+    public function getName()
+    {
+        return $this->name;
+    }
     public function setEmail($email)
     {
         $emailValid = filter_var($email,FILTER_SANITIZE_EMAIL);
@@ -41,13 +53,8 @@ class Login
 }
 
 
-$login = new Login();
-$login->setEmail("rondinel()()(eg@gmail.com");
-$login->setPassword(12345);
+$login = new Login("rondineleg@gmail.com","12345","rondinele"); 
+print("<br>");
 $login->LogInto();
-
 print("<br>");
-
-print $login->getEmail();
-print("<br>");
-print $login->getPassword();
+print($login->getName());
