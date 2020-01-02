@@ -26,6 +26,14 @@
     $b = is_float($f);
     echo "is_float(f) = $b <br>";
 
+
+    //is_bool();
+    $t = true;
+    $b = is_bool($t);
+    echo "is_bool(t) = $b <br>";
+
+
+  
     ?>
 </body>
 
