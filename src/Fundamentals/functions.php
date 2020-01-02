@@ -32,7 +32,12 @@
     $b = is_bool($t);
     echo "is_bool(t) = $b <br>";
 
+  //is_array();
+  $a = [];
+  $b = is_array($a);
+  echo "is_array(a) = $b <br>";
 
+  
   
     ?>
 </body>
