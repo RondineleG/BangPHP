@@ -56,6 +56,16 @@
      $r = pow(2.1, 9);
      printf("<p> 2.1^9 = %10.4f </p>\n", $r);
  
+
+     // rand()
+     $r = rand();
+     printf("<p> rand = %10.4f </p>\n", $r);
+     printf("<p> rand = %10.4f </p>\n", rand());
+     printf("<p> rand = %10.4f </p>\n", rand());
+     printf("<p> rand 1-10   = %10.4f </p>\n", rand(1, 10));
+     printf("<p> rand 10-100 = %10.4f </p>\n", rand(10, 100));
+   
+
     ?>
 </body>
 
