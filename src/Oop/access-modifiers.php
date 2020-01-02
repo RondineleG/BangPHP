@@ -33,7 +33,7 @@
         }
     }
 
-    $mango = new Fruit();
+    $mango = new Fruit("","");
     $mango->name = "Mangos"; // ok
     #$mango -> color = "Yellow"; //error
     #$mango -> weight = "300"; //error
