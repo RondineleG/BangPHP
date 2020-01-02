@@ -67,14 +67,37 @@
 
 
     // trim()
- $s = " Hello World               ";
- $t = trim($s);
- printf("<p>trim( %s ) = %s</p>\n", $s, $t);
+    $s = " Hello World               ";
+    $t = trim($s);
+    printf("<p>trim( %s ) = %s</p>\n", $s, $t);
 
- $s = "_______Hello World_______________";
- $t = trim($s,'_');
- printf("<p>trim( %s ) = %s</p>\n", $s, $t);
+    $s = "_______Hello World_______________";
+    $t = trim($s, '_');
+    printf("<p>trim( %s ) = %s</p>\n", $s, $t);
+    echo "<hr>";
 
+    // strcmp() e strcasecmp()
+    $s1 = "My text";
+    $s2 = "string";
+    $r = strcmp($s1, $s2);
+    printf("<p>strcmp( %s, %s ) = %d</p>\n", $s1, $s2, $r);
+    $r = strcmp($s2, $s1);
+    printf("<p>strcmp( %s, %s ) = %d</p>\n", $s2, $s1, $r);
+
+    $s1 = "same string";
+    $s2 = "same string";
+    $r = strcmp($s2, $s1);
+    printf("<p>strcmp( %s, %s ) = %d</p>\n", $s2, $s1, $r);
+
+    $s1 = "Same string";
+    $s2 = "same string";
+    $r = strcmp($s2, $s1);
+    printf("<p>strcmp( %s, %s ) = %d</p>\n", $s2, $s1, $r);
+
+    $r = strcasecmp($s2, $s1); // ignore upper and lower case
+    printf("<p>strcasecmp( %s, %s ) = %d</p>\n", $s2, $s1, $r);
+
+  
 
 
 
