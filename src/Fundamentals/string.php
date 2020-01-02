@@ -47,7 +47,7 @@
 
     // strpos()
     $p = "Hello world";
-    $t = "da";
+    $t = "D";
     $s = strpos($p, $t);
     if ($s == false)
         printf("<p>Not found</p>");
@@ -57,7 +57,7 @@
 
     // stripos()
     $p = "Hello world";
-    $t = "da";
+    $t = "D";
     $s = stripos($p, $t);
     if ($s == false)
         printf("<p>Not found</p>");
@@ -66,7 +66,14 @@
     echo "<hr>";
 
 
+    // trim()
+ $s = " Hello World               ";
+ $t = trim($s);
+ printf("<p>trim( %s ) = %s</p>\n", $s, $t);
 
+ $s = "_______Hello World_______________";
+ $t = trim($s,'_');
+ printf("<p>trim( %s ) = %s</p>\n", $s, $t);
 
 
 
