@@ -31,8 +31,16 @@
 
    // strtoupper()
    $name = "rondinele";
+   echo "Value of name is : ". $name;
    $u= strtoupper($name);
-   printf("<p>Upper of 'name' is : %s </p>",$u);
+   printf("<p>strtoupper of 'name' is : %s </p>",$u);
+   echo"<hr>";  
+   
+   // strtolower()
+   $name = "BEATRIZ";
+   echo "Value of name is : ". $name;
+   $u= strtolower($name);
+   printf("<p>strtolower of 'name' is : %s </p>",$u);
    echo"<hr>";  
    
 ?>
