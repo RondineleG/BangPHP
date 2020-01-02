@@ -41,6 +41,17 @@
     printf("<p> ceil  r0 = %f </p>\n", $r0);
     printf("<p> floor r1 = %f </p>\n", $r1);
 
+
+    // intval()
+    $r = 15.366;
+    $i = intval(15.366);
+    $b = is_float($r);
+    echo "is_float( $r ) = $b <br>";
+    $b = is_integer($i);
+    echo "is_integer( $i ) = $b <br>";
+
+   
+
     ?>
 </body>
 
