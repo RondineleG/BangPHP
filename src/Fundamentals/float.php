@@ -35,8 +35,8 @@
 
     // ceil() e floor()
     $r = 15.366;
-    $r0 = ceil($r);
-    $r1 = floor($r);
+    $r0 = ceil($r); // round up
+    $r1 = floor($r); // round down
     printf("<p> r  = %f </p>\n", $r);
     printf("<p> ceil  r0 = %f </p>\n", $r0);
     printf("<p> floor r1 = %f </p>\n", $r1);
