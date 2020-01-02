@@ -62,8 +62,8 @@
      printf("<p> rand = %10.4f </p>\n", $r);
      printf("<p> rand = %10.4f </p>\n", rand());
      printf("<p> rand = %10.4f </p>\n", rand());
-     printf("<p> rand 1-10   = %10.4f </p>\n", rand(1, 10));
-     printf("<p> rand 10-100 = %10.4f </p>\n", rand(10, 100));
+     printf("<p> rand 1-10   = %10.2f </p>\n", rand(1, 10));
+     printf("<p> rand 10-100 = %10.2f </p>\n", rand(10, 100));
    
 
     ?>
