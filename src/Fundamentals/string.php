@@ -20,6 +20,15 @@
     $s = "Numero i = " . $i . "; ";
     printf("<p>s: %s </p>\n", $s);
     
+
+    /* Functions */
+
+    // strlen() for count
+    $s = "Hello world";
+    $i = strlen($s);
+    print ($i);
+    
+    
 ?>
 </body>
 </html>
