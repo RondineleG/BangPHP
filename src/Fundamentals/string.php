@@ -55,6 +55,18 @@
         printf("<p>strpos of p is : %d </p>", $s);
     echo "<hr>";
 
+    // stripos()
+    $p = "Hello world";
+    $t = "da";
+    $s = stripos($p, $t);
+    if ($s == false)
+        printf("<p>Not found</p>");
+    else
+        printf("<p>stripos of p is : %d </p>", $s);
+    echo "<hr>";
+
+
+
 
 
 
