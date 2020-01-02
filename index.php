@@ -16,14 +16,14 @@
 </head>
 
 <body>
-    <h1 onclick="msg()">My name is :</h1>
+    <h1 onclick="message()">My name is :</h1>
     <h1>Learning PHP With</h1>
     <?php
     print("<h1>wwww.w3schools.com</h1>");
     ?>
 
     <script>
-        var name = "Rondinele";
+        var name = "Hello, Rondinele";
 
         function message() {
             return alert(name);
