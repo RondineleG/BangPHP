@@ -26,8 +26,7 @@
     // strlen() for count
     $s = "Hello world";
     $i = strlen($s);
-    print ($i);
-    
+   printf("<p>Lengt of 's' is : %d</p>",$i);
     
 ?>
 </body>
