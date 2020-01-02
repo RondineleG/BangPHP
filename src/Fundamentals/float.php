@@ -50,8 +50,12 @@
     $b = is_integer($i);
     echo "is_integer( $i ) = $b <br>";
 
-   
-
+     // pow()
+     $r = pow(2, 10);
+     printf("<p> 2^10 = %10.4f </p>\n", $r);
+     $r = pow(2.1, 9);
+     printf("<p> 2.1^9 = %10.4f </p>\n", $r);
+ 
     ?>
 </body>
 
