@@ -98,7 +98,7 @@
     printf("<p>strcasecmp( %s, %s ) = %d</p>\n", $s2, $s1, $r);
 
   
-  // explode()
+  // explode() split string in array
   $animals  = "lion dog cat leopard girrafe ";
   $value = explode(" ", $animals); // separator is ' '
   print_r($value);
