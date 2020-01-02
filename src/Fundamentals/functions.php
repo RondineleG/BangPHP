@@ -21,6 +21,11 @@
     echo "is_string(s) = $b <br>";
 
 
+    //is_float();
+    $f = 1.9;
+    $b = is_float($f);
+    echo "is_float(f) = $b <br>";
+
     ?>
 </body>
 
