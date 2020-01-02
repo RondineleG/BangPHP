@@ -41,6 +41,7 @@
    $v = [];
   $b = isset($v);
   echo "isset(v) = $b <br>";
+  var_dump($b);
   
     ?>
 </body>
