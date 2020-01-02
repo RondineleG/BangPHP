@@ -37,7 +37,10 @@
   $b = is_array($a);
   echo "is_array(a) = $b <br>";
 
-  
+  //isset()
+   $v = [];
+  $b = isset($v);
+  echo "isset(v) = $b <br>";
   
     ?>
 </body>
