@@ -27,7 +27,14 @@
     $s = "Hello world";
     $i = strlen($s);
    printf("<p>Lengt of 's' is : %d</p>",$i);
-    
+    echo"<hr>";
+
+   // strtoupper()
+   $name = "rondinele";
+   $u= strtoupper($name);
+   printf("<p>Upper of 'name' is : %s </p>",$u);
+   echo"<hr>";  
+   
 ?>
 </body>
 </html>
