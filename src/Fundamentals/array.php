@@ -87,6 +87,31 @@
       var_dump($a2);
 
 
+      echo"<hr>";
+
+      //array_values()
+
+      $Keys2 = ["Name:"=>"Rodinele", "Age:"=>"27"];
+      $a2 = array_values($Keys2);
+      echo (' array_values($Keys2) is : ' . $a2);
+      var_dump($a2);
+
+      echo"<hr>";
+
+      //sort() and rsort()
+
+      $a1 = [100,20,3,60,2,8];
+      sort($a1);
+      echo ('  sort($a1) is : ' . $a1);
+      var_dump($a1);
+
+      echo"<hr>";
+      $a1 = [100,20,3,60,2,8];
+      rsort($a1);
+      echo ('  rsort($a1) is : ' . $a1);
+      var_dump($a1);
+
+
 ?>
 
 </body>
