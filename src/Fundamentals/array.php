@@ -111,6 +111,19 @@
       echo ('  rsort($a1) is : ' . $a1);
       var_dump($a1);
 
+      echo"<hr>";
+    // asort() and arsort()
+    $a1 = ["key1"=>13, "key2"=>11, "key3"=>14, "key4"=>10, "key5"=> 12];
+    asort($a1);
+    echo "asort( a1 ) = " ;
+    print_r($a1);
+    echo "<br>\n";
+    arsort($a1);
+    echo "arsort( a1 ) = " ;
+    print_r($a1);
+    echo "<br>\n";
+    echo"<hr>";
+    
 
 ?>
 
