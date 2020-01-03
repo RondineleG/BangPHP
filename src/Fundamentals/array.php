@@ -129,7 +129,7 @@
     echo "<hr>";
 
     // array_multisort()
-    $a1 = array("aple", "beach", "banana","lime","orange");
+    $a1 = array("apple", "beach", "banana", "lime", "orange");
     array_multisort($a1); // array_multisort($a1,SORT_ASC)
     print_r($a1);
     echo "<br>\n";
@@ -138,11 +138,31 @@
     print_r($a1);
     echo "<br>\n";
 
-    $a1 = array("aple", "beach", "banana","lime","orange");
+    $a1 = array("apple", "beach", "banana", "lime", "orange");
     $a2 = array("red", "yellow", "yellow", "green", "orange");
     array_multisort($a1, $a2);
     print_r($a1);
     print_r($a2);
+    echo "<br>\n";
+    echo "<hr>";
+
+
+    // array_slice()
+    $a1 = [10, 20, 30, 40, 50, 60, 70, 80];
+    echo "array_slice = ";
+    print_r(array_slice($a1, 5));
+    echo "<br>\n";
+    print_r(array_slice($a1, 2, 2));
+    echo "<br>\n";
+    echo "<hr>";
+    
+    // unset()
+    $a1 = [10, 20, 30, 40, 50, 60, 70, 80];
+    unset($a1[2]);
+    unset($a1[3]);
+    unset($a1[4]);
+    echo "removing index 2,3,4 = ";
+    print_r($a1);
     echo "<br>\n";
     echo "<hr>";
 
