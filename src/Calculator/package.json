@@ -1,0 +1,14 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "Creating calculator",
+  "main": "no",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rondinele Guimaraes",
+  "license": "MIT",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}
