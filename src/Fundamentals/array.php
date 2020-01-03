@@ -57,6 +57,36 @@
       echo (' array_fill(0,4,"Blue") is : ');
       var_dump($a1);
 
+
+   
+      echo"<hr>";
+
+      //array_reverse()
+
+      $a1 = [10,20,30,60,50,80];
+      $a2 = array_reverse($a1);
+      echo (' array_reverse($a1) is : ');
+      var_dump($a2);
+
+      echo"<hr>";
+      
+      //array_sum()
+
+      $a1 = [10,20,30,60,50,80];
+      $a2 = array_sum($a1);
+      echo (' array_sum($a1) is : ' . $a2);
+      var_dump($a2);
+
+      echo"<hr>";
+
+      //array_search()
+
+      $a1 = [10,20,30,60,50,80];
+      $a2 = array_search(50, $a1);
+      echo (' array_search(40, $a1) is : ' . $a2);
+      var_dump($a2);
+
+
 ?>
 
 </body>
