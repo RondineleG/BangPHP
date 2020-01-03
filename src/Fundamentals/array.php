@@ -125,8 +125,26 @@
     echo "arsort( a1 ) = ";
     print_r($a1);
     echo "<br>\n";
+
     echo "<hr>";
 
+    // array_multisort()
+    $a1 = array("aple", "beach", "banana","lime","orange");
+    array_multisort($a1); // array_multisort($a1,SORT_ASC)
+    print_r($a1);
+    echo "<br>\n";
+
+    array_multisort($a1, SORT_DESC);
+    print_r($a1);
+    echo "<br>\n";
+
+    $a1 = array("aple", "beach", "banana","lime","orange");
+    $a2 = array("red", "yellow", "yellow", "green", "orange");
+    array_multisort($a1, $a2);
+    print_r($a1);
+    print_r($a2);
+    echo "<br>\n";
+    echo "<hr>";
 
     ?>
 
