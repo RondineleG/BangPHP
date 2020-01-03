@@ -155,7 +155,7 @@
     print_r(array_slice($a1, 2, 2));
     echo "<br>\n";
     echo "<hr>";
-    
+
     // unset()
     $a1 = [10, 20, 30, 40, 50, 60, 70, 80];
     unset($a1[2]);
@@ -165,6 +165,29 @@
     print_r($a1);
     echo "<br>\n";
     echo "<hr>";
+
+
+    // array_splice()
+    $a1 = [10, 20, 30, 40, 50, 60, 70, 80];
+    array_splice($a1, 2, 3);
+    echo "array_splice = ";
+    print_r($a1);
+    echo "<br>\n";
+    echo "<hr>";
+    
+    // in_array()
+    $search = 10;
+    $arr = [1, 2, 3, 10, 9, 80, 78, 90];
+    if (in_array($search, $arr))
+        echo "<p>find</p>\n";
+    else
+        echo "<p>Not found</p>\n";
+    echo "<hr>";
+    // end()
+    $arr = [1, 2, 3, 4, 5];
+    $last = end($arr);
+    echo "<p>Last element: $last</p>\n";
+
 
     ?>
 
